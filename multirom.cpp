@@ -1159,7 +1159,7 @@ bool MultiROM::injectBoot(std::string img_path, bool only_if_older)
 	system("rm -r /tmp/boot");
 
 	if(img_path == m_boot_dev)
-		system_args("dd bs=4096 if=/tmp/newboot.img of=\"%s\"", m_boot_dev.c_str());
+		system_args("flash_image boot /tmp/newboot.img");
 	else
 		system_args("cp /tmp/newboot.img \"%s\"", img_path.c_str());
 	return true;
@@ -2375,7 +2375,7 @@ bool MultiROM::fakeBootPartition(const char *fakeImg)
 		close(fd);
 
 		// Copy current boot.img as base
-		system_args("dd if=\"%s\" of=\"%s\"", m_boot_dev.c_str(), fakeImg);
+		system_args("dump_imagge boot /tmp/fakeImg");
 		gui_print("Current boot sector was used as base for fake boot.img!\n");
 	}
 
@@ -2808,7 +2808,7 @@ bool MultiROM::copyInternal(const std::string& dest_name)
 		goto erase_incomplete;
 
 	gui_print("Copying boot partition...\n");
-	if(system_args("dd if=%s of=\"%s/boot.img\" bs=4096", getBootDev().c_str(), dest_dir.c_str()) != 0)
+	if(system_args("dump_image boot %s/boot.img\n", dest_dir.c_str()) != 0)
 	{
 		gui_print("Dumping boot dev failed!\n");
 		goto erase_incomplete;
@@ -2864,7 +2864,7 @@ bool MultiROM::copySecondaryToInternal(const std::string& rom_name)
 	}
 
 	gui_print("Writing boot partition...\n");
-	if(system_args("dd if=\"%s/boot.img\" of=\"%s\" bs=4096", src_dir.c_str(), getBootDev().c_str()) != 0)
+	if(system_args("flash_image boot %s/boot.img\n", src_dir.c_str())!=0)
 	{
 		gui_print("Writing boot.img has failed!\n");
 		return false;

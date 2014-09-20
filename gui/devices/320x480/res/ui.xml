@@ -11,6 +11,7 @@
 
 	<include>
 		<xmlfile name="portrait.xml" />
+		<xmlfile name="multirom.xml" />
 	</include>
 
 	<resources>
@@ -47,75 +48,82 @@
 	</resources>
 
 	<variables>
-		<variable name="col1_x" value="8" />
-		<variable name="col2_x" value="162" />
-		<variable name="col_center_x" value="85" />
-		<variable name="col_center_medium_x" value="122" />
-		<variable name="center_x" value="160" />
-		<variable name="row1_y" value="84" />
-		<variable name="row2_y" value="174" />
-		<variable name="row3_y" value="270" />
-		<variable name="row4_y" value="366" />
-		<variable name="row_queue_y" value="306" />
-		<variable name="row1_header_y" value="64" />
-		<variable name="row1_text_y" value="85" />
-		<variable name="row2_text_y" value="104" />
-		<variable name="row3_text_y" value="123" />
-		<variable name="row4_text_y" value="142" />
-		<variable name="row5_text_y" value="161" />
-		<variable name="row6_text_y" value="180" />
-		<variable name="row7_text_y" value="199" />
-		<variable name="row8_text_y" value="218" />
-		<variable name="row9_text_y" value="237" />
-		<variable name="row10_text_y" value="256" />
-		<variable name="row11_text_y" value="275" />
-		<variable name="row12_text_y" value="294" />
-		<variable name="row13_text_y" value="313" />
-		<variable name="row14_text_y" value="332" />
-		<variable name="row15_text_y" value="351" />
-		<variable name="row16_text_y" value="370" />
-		<variable name="row17_text_y" value="389" />
-		<variable name="row18_text_y" value="408" />
-		<variable name="zip_status_y" value="350" />
-		<variable name="tz_selected_y" value="66" />
-		<variable name="tz_set_y" value="348" />
-		<variable name="tz_current_y" value="438" />
-		<variable name="col_progressbar_x" value="32" />
-		<variable name="row_progressbar_y" value="432" />
-		<variable name="col1_medium_x" value="7" />
-		<variable name="col2_medium_x" value="83" />
-		<variable name="col3_medium_x" value="160" />
-		<variable name="col4_medium_x" value="237" />
-		<variable name="row1_medium_y" value="78" />
-		<variable name="row2_medium_y" value="123" />
-		<variable name="row3_medium_y" value="168" />
-		<variable name="row4_medium_y" value="213" />
-		<variable name="row5_medium_y" value="258" />
-		<variable name="row6_medium_y" value="303" />
-		<variable name="row7_medium_y" value="348" />
-		<variable name="slider_x" value="39" />
-		<variable name="slider_y" value="400" />
-		<variable name="slider_text_y" value="425" />
+		<variable name="col1_x" value="2" />
+		<variable name="col2_x" value="104" />
+		<variable name="col_center_x" value="53" />
+		<variable name="col_center_medium_x" value="79" />
+		<variable name="center_x" value="100" />
+		<variable name="row1_y" value="64" />
+		<variable name="row2_y" value="154" />
+		<variable name="row3_y" value="244" />
+		<variable name="row4_y" value="334" />
+
+		<!-- these two are unused? -->
+		<variable name="col1_center_x" value="30" />
+		<variable name="col2_center_x" value="92" />
+
+		<variable name="row1_text2_y" value="78" />
+		<variable name="row2_text2_y" value="138" />
+		<variable name="row_queue_y" value="190" />
+		<variable name="row1_header_y" value="45" />
+		<variable name="row1_text_y" value="64" />
+		<variable name="row2_text_y" value="83" />
+		<variable name="row3_text_y" value="101" />
+		<variable name="row4_text_y" value="120" />
+		<variable name="row5_text_y" value="139" />
+		<variable name="row6_text_y" value="158" />
+		<variable name="row7_text_y" value="177" />
+		<variable name="row8_text_y" value="195" />
+		<variable name="row9_text_y" value="214" />
+		<variable name="row10_text_y" value="233" />
+		<variable name="row11_text_y" value="252" />
+		<variable name="row12_text_y" value="270" />
+		<variable name="row13_text_y" value="289" />
+		<variable name="row14_text_y" value="308" />
+		<variable name="row15_text_y" value="327" />
+		<variable name="row16_text_y" value="345" />
+		<variable name="row17_text_y" value="364" />
+		<variable name="row18_text_y" value="383" />
+		<variable name="zip_status_y" value="231" />
+		<variable name="tz_selected_y" value="60" />
+		<variable name="tz_set_y" value="375" />
+		<variable name="tz_current_y" value="357" />
+		<variable name="col_progressbar_x" value="103" />
+		<variable name="row_progressbar_y" value="412" />
+		<variable name="col1_medium_x" value="2" />
+		<variable name="col2_medium_x" value="53" />
+		<variable name="col3_medium_x" value="105" />
+		<variable name="col4_medium_x" value="156" />
+		<variable name="row1_medium_y" value="49" />
+		<variable name="row2_medium_y" value="99" />
+		<variable name="row3_medium_y" value="149" />
+		<variable name="row4_medium_y" value="199" />
+		<variable name="row5_medium_y" value="249" />
+		<variable name="row6_medium_y" value="299" />
+		<variable name="row7_medium_y" value="349" />
+		<variable name="slider_x" value="10" />
+		<variable name="slider_y" value="394" />
+		<variable name="slider_text_y" value="419" />
 		<variable name="button_text_color" value="#AAAAAA" />
 		<variable name="text_color" value="#FFFFFF" />
 		<variable name="text_success_color" value="#33B5E5" />
 		<variable name="text_fail_color" value="#FF0101" />
 		<variable name="highlight_color" value="#90909080" />
 		<variable name="caps_highlight_color" value="#33B5E580" />
-		<variable name="home_button_x" value="7" />
+		<variable name="home_button_x" value="2" />
 		<variable name="home_button_y" value="460" />
-		<variable name="back_button_x" value="275" />
+		<variable name="back_button_x" value="178" />
 		<variable name="back_button_y" value="460" />
-		<variable name="sort_text_x" value="8" />
-		<variable name="sort_asc_text_y" value="411" />
-		<variable name="sort_asc_button_y" value="411" />
-		<variable name="sort_desc_text_y" value="435" />
-		<variable name="sort_desc_button_y" value="435" />
-		<variable name="sort_col1_button_x" value="120" />
-		<variable name="sort_col2_button_x" value="160" />
-		<variable name="sort_col3_button_x" value="200" />
-		<variable name="input_width" value="307" />
-		<variable name="input_height" value="24" />
+		<variable name="sort_text_x" value="2" />
+		<variable name="sort_asc_text_y" value="409" />
+		<variable name="sort_asc_button_y" value="405" />
+		<variable name="sort_desc_text_y" value="432" />
+		<variable name="sort_desc_button_y" value="428" />
+		<variable name="sort_col1_button_x" value="65" />
+		<variable name="sort_col2_button_x" value="90" />
+		<variable name="sort_col3_button_x" value="115" />
+		<variable name="input_width" value="197" />
+		<variable name="input_height" value="19" />
 		<variable name="input_background_color" value="#303030" />
 		<variable name="input_cursor_color" value="#33B5E5" />
 		<variable name="input_cursor_width" value="2" />
@@ -127,12 +135,12 @@
 		<variable name="highlight" value="#33B5E5" />
 		<variable name="console_background" value="#303030" />
 		<variable name="console_scroll" value="#303030" />
-		<variable name="console_action_height" value="192" />
-		<variable name="console_install_height" value="264" />
-		<variable name="console_installdone_height" value="180" />
+		<variable name="console_action_height" value="177" />
+		<variable name="console_install_height" value="225" />
+		<variable name="console_installdone_height" value="165" />
 		<variable name="fileselector_x" value="3" />
-		<variable name="fileselector_width" value="313" />
-		<variable name="fileselector_install_height" value="284" />
+		<variable name="fileselector_width" value="199" />
+		<variable name="fileselector_install_height" value="293" />
 		<variable name="fileselector_header_background" value="#202020" />
 		<variable name="fileselector_header_textcolor" value="#AAAAAA" />
 		<variable name="fileselector_header_separatorcolor" value="#33B5E5" />
@@ -145,55 +153,81 @@
 		<variable name="fileselector_spacing" value="12" />
 		<variable name="fastscroll_linecolor" value="#808080" />
 		<variable name="fastscroll_rectcolor" value="#808080" />
-		<variable name="fastscroll_w" value="27" />
+		<variable name="fastscroll_w" value="15" />
 		<variable name="fastscroll_linew" value="1" />
-		<variable name="fastscroll_rectw" value="18" />
-		<variable name="fastscroll_recth" value="31" />
+		<variable name="fastscroll_rectw" value="10" />
+		<variable name="fastscroll_recth" value="26" />
 		<variable name="listbox_x" value="3" />
-		<variable name="listbox_width" value="313" />
-		<variable name="listbox_tz_height" value="189" />
+		<variable name="listbox_width" value="199" />
+		<variable name="listbox_tz_height" value="222" />
 		<variable name="listbox_background" value="#303030" />
 		<variable name="listbox_spacing" value="12" />
-		<variable name="sd_plus_x" value="187" />
-		<variable name="sdext_text_x" value="56" />
-		<variable name="sdext_text_y" value="83" />
-		<variable name="sdswap_button_y" value="111" />
-		<variable name="sdswap_text_x" value="56" />
-		<variable name="sdswap_text_y" value="110" />
-		<variable name="sdfilesystem_text_y" value="144" />
-		<variable name="sdfilesystem_button_y" value="168" />
-		<variable name="lock_x" value="27" />
-		<variable name="lock_y" value="120" />
-		<variable name="filemanager_select_x" value="243" />
-		<variable name="filemanager_select_y" value="414" />
-		<variable name="terminal_console_height" value="220" />
-		<variable name="terminal_text_y" value="225" />
-		<variable name="terminal_button_y" value="220" />
-		<variable name="row_dst_text_y" value="256" />
-		<variable name="row_offset_text_y" value="275" />
-		<variable name="row_offset_medium_y" value="303" />
+		<variable name="sd_plus_x" value="88" />
+		<variable name="sdext_text_x" value="28" />
+		<variable name="sdext_text_y" value="68" />
+		<variable name="sdswap_button_y" value="98" />
+		<variable name="sdswap_text_x" value="28" />
+		<variable name="sdswap_text_y" value="101" />
+		<variable name="sdfilesystem_text_y" value="128" />
+		<variable name="sdfilesystem_button_y" value="143" />
+		<variable name="lock_x" value="40" />
+		<variable name="lock_y" value="150" />
+		<variable name="filemanager_select_x" value="140" />
+		<variable name="filemanager_select_y" value="45" />
+		<variable name="backup_name_y" value="207" />
+		<variable name="terminal_console_height" value="245" />
+		<variable name="terminal_text_y" value="256" />
+		<variable name="terminal_button_y" value="263" />
+		<variable name="row_dst_text_y" value="270" />
+		<variable name="row_offset_text_y" value="289" />
+		<variable name="row_offset_medium_y" value="315" />
 		<variable name="button_fill_color" value="#303030" />
-		<variable name="button_fill_full_width" value="304" />
-		<variable name="button_fill_main_width" value="150" />
+		<variable name="button_fill_full_width" value="197" />
+		<variable name="button_fill_main_width" value="95" />
 		<variable name="button_fill_main_height" value="81" />
 		<variable name="button_fill_half_height" value="40" />
-		<variable name="button_fill_quarter_height" value="24" />
-		<variable name="backup_list_height" value="193" />
-		<variable name="backup_button_row1" value="300" />
-		<variable name="backup_button_row2" value="326" />
-		<variable name="mount_list_height" value="270" />
-		<variable name="mount_storage_row" value="340" />
-		<variable name="storage_list_height" value="290" />
-		<variable name="wipe_list_height" value="270" />
-		<variable name="wipe_button_row1" value="350" />
-		<variable name="wipe_button_y" value="270" />
-		<variable name="slidervalue_w" value="304" />
+		<variable name="button_fill_quarter_height" value="20" />
+		<variable name="backup_list_height" value="195" />
+		<variable name="backup_button_row1" value="280" />
+		<variable name="backup_button_row2" value="305" />
+		<variable name="mount_list_height" value="259" />
+		<variable name="mount_storage_row" value="310" />
+		<variable name="storage_list_height" value="250" />
+		<variable name="wipe_list_height" value="277" />
+		<variable name="wipe_button_row1" value="338" />
+		<variable name="wipe_button_y" value="244" />
+		<variable name="slidervalue_w" value="197" />
 		<variable name="slidervalue_line_clr" value="#FFFFFF" />
 		<variable name="slidervalue_slider_clr" value="#33B5E5" />
 		<variable name="slidervalue_lineh" value="1" />
 		<variable name="slidervalue_padding" value="8" />
 		<variable name="slidervalue_sliderw" value="4" />
 		<variable name="slidervalue_sliderh" value="20" />
+
+		<variable name="mrom_inject_txt_x" value="150" />
+		<variable name="mrom_inject_txt_y" value="258" />
+		<variable name="mrom_wipe_col1_x" value="32" />
+		<variable name="mrom_wipe_col2_x" value="78" />
+		<variable name="mrom_wipe_col3_x" value="123" />
+		<variable name="mrom_boot_delay_sec_x" value="102" />
+		<variable name="mrom_boot_delay_add_x" value="117" />
+		<variable name="mrom_boot_rom_h" value="200" />
+		<variable name="mrom_ubuntu_desktop_x" value="50" />
+		<variable name="mrom_ubuntu_touch_x" value="117" />
+		<variable name="mrom_install_loc_h" value="130" />
+		<variable name="mrom_install_refresh_y" value="335" />
+		<variable name="mrom_img1_text_y" value="150" />
+		<variable name="mrom_img2_text_y" value="195" />
+		<variable name="mrom_img3_text_y" value="240" />
+		<variable name="mrom_img4_text_y" value="285" />
+		<variable name="mrom_img5_text_y" value="330" />
+		<variable name="mrom_img1_btn_y" value="132" />
+		<variable name="mrom_img2_btn_y" value="177" />
+		<variable name="mrom_img3_btn_y" value="222" />
+		<variable name="mrom_img4_btn_y" value="267" />
+		<variable name="mrom_img5_btn_y" value="312" />
+		<variable name="mrom_rom_loc_list_h" value="215" />
+		<variable name="mrom_swap_list_h" value="130" />
 	</variables>
 
 	<mousecursor>
@@ -213,26 +247,26 @@
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
-				<placement x="65" y="3" />
-				<text>TeamWin Recovery v%tw_version%</text>
+				<placement x="30" y="4" />
+				<text>MultiROM TWRP %tw_mrom_rec_version% (v%tw_version%)</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<condition var1="tw_simulate_actions" var2="1" />
 				<font resource="font" />
-				<placement x="65" y="21" />
+				<placement x="30" y="15" />
 				<text>SIMULATING ACTIONS</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
-				<placement x="65" y="39" />
+				<placement x="30" y="29" />
 				<text>%tw_time%</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
-				<placement x="165" y="39" />
+				<placement x="68" y="29" />
 				<conditions>
 					<condition var1="tw_no_battery_percent" var2="0" />
 					<condition var1="tw_battery" op=">" var2="0" />
@@ -241,7 +275,15 @@
 				<text>Battery: %tw_battery%</text>
 			</object>
 
+			<object type="text" color="%text_fail_color%">
+				<font resource="font" />
+				<placement x="30" y="15" />
+				<condition var1="multirom_rom_name_title" var2="1" />
+				<text>Using ROM: %tw_multirom_rom_name%</text>
+			</object>
+
 			<object type="button">
+				<highlight color="%highlight_color%" />
 				<placement x="%home_button_x%" y="%home_button_y%" />
 				<font resource="font" color="%button_text_color%" />
 				<text></text>
@@ -251,6 +293,7 @@
 			</object>
 
 			<object type="button">
+				<highlight color="%highlight_color%" />
 				<placement x="%back_button_x%" y="%back_button_y%" />
 				<font resource="font" color="%button_text_color%" />
 				<text></text>
@@ -262,6 +305,11 @@
 			<object type="action">
 				<touch key="power" />
 				<action function="overlay">lock</action>
+			</object>
+
+			<object type="action">
+				<touch key="voldown" />
+				<action function="timeout"/>
 			</object>
 
 			<object type="action">
@@ -285,80 +333,86 @@
 			</object>
 		</template>
 
-		<template name="action_page_console">
-			<object type="console">
-				<placement x="%console_x%" y="%row2_y%" w="%console_width%" h="%console_action_height%" />
-				<color foreground="%console_foreground%" background="%console_background%" scroll="%console_scroll%" />
-				<font resource="fixed" />
-			</object>
-		</template>
-
 		<template name="sort_options">
 			<object type="text" color="%text_color%">
-				<font resource="mediumfont" />
+				<font resource="font" />
 				<placement x="%sort_text_x%" y="%sort_asc_text_y%" />
 				<text>Sort Ascending:</text>
 			</object>
 
 			<object type="button">
+				<highlight color="%highlight_color%" />
 				<placement x="%sort_col1_button_x%" y="%sort_asc_button_y%" />
-				<font resource="mediumfont" color="%button_text_color%" />
+				<font resource="font" color="%button_text_color%" />
 				<text>Name</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=1</action>
 			</object>
 
 			<object type="button">
+				<highlight color="%highlight_color%" />
 				<placement x="%sort_col2_button_x%" y="%sort_asc_button_y%" />
-				<font resource="mediumfont" color="%button_text_color%" />
+				<font resource="font" color="%button_text_color%" />
 				<text>Date</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=2</action>
 			</object>
 
 			<object type="button">
+				<highlight color="%highlight_color%" />
 				<placement x="%sort_col3_button_x%" y="%sort_asc_button_y%" />
-				<font resource="mediumfont" color="%button_text_color%" />
+				<font resource="font" color="%button_text_color%" />
 				<text>Size</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=3</action>
 			</object>
 
 			<object type="text" color="%text_color%">
-				<font resource="mediumfont" />
+				<font resource="font" />
 				<placement x="%sort_text_x%" y="%sort_desc_text_y%" />
 				<text>Sort Descending:</text>
 			</object>
 
 			<object type="button">
+				<highlight color="%highlight_color%" />
 				<placement x="%sort_col1_button_x%" y="%sort_desc_button_y%" />
-				<font resource="mediumfont" color="%button_text_color%" />
+				<font resource="font" color="%button_text_color%" />
 				<text>Name</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=-1</action>
 			</object>
 
 			<object type="button">
+				<highlight color="%highlight_color%" />
 				<placement x="%sort_col2_button_x%" y="%sort_desc_button_y%" />
-				<font resource="mediumfont" color="%button_text_color%" />
+				<font resource="font" color="%button_text_color%" />
 				<text>Date</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=-2</action>
 			</object>
 
 			<object type="button">
+				<highlight color="%highlight_color%" />
 				<placement x="%sort_col3_button_x%" y="%sort_desc_button_y%" />
-				<font resource="mediumfont" color="%button_text_color%" />
+				<font resource="font" color="%button_text_color%" />
 				<text>Size</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=-3</action>
 			</object>
 		</template>
 
+		<template name="action_page_console">
+			<object type="console">
+				<placement x="0" y="%row2_y%" w="200" h="177" />
+				<color foreground="%console_foreground%" background="%console_background%" scroll="%console_scroll%" />
+				<font resource="fixed" />
+			</object>
+		</template>
+
 		<template name="footer">
 			<object type="console">
-				<slideout resource="slideout" x="140" y="456" />
-				<placement x="%console_x%" y="0" w="%console_width%" h="456" />
+				<slideout resource="slideout" x="90" y="461" />
+				<placement x="%console_x%" y="0" w="%console_width%" h="461" />
 				<color foreground="%console_foreground%" background="%console_background%" scroll="%console_scroll%" />
 				<font resource="fixed" />
 			</object>
