@@ -2375,7 +2375,7 @@ bool MultiROM::fakeBootPartition(const char *fakeImg)
 		close(fd);
 
 		// Copy current boot.img as base
-		system_args("dump_imagge boot /tmp/fakeImg");
+		system_args("dump_image boot /tmp/fakeImg");
 		gui_print("Current boot sector was used as base for fake boot.img!\n");
 	}
 
